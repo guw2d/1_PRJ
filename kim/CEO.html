@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+	  
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>슈퍼커피</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Restaurantly
+  * Updated: Jan 09 2024 with Bootstrap v5.3.2
+  * Template URL: https://bootstrapmade.com/restaurantly-restaurant-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+ 	  <style>
+@font-face {
+    font-family: "sfont";
+    font-size: 30px;
+    src: url("../fonts/Dongle/Dongle-Regular.ttf");
+}	 
+
+@font-face {
+    font-family: "efont";
+    font-size: 30px;
+    src: url("../fonts/CuteFont-Regular.ttf");
+}
+
+@font-face {
+    font-family: "ffont";
+    font-size: 30px;
+    src: url("../fonts/Sunflower/Sunflower-Medium.ttf");
+}	 
+
+.events {
+  background: url(../image/cafe-7454951_1280.jpg) center center no-repeat;
+  background-size: cover;
+  position: relative;
+}
+ </style> 
+ 	 
+ 	 
+  
+</head>
+
+<body>
+
+  <!-- ======= Top Bar ======= -->
+  <div id="topbar" class="d-flex align-items-center fixed-top">
+    <div class="container d-flex justify-content-center justify-content-md-between">
+
+
+
+      <div class="contact-info d-flex align-items-center">
+        <i class="bi bi-phone d-flex align-items-center"><span>010-ㅋㅋㅋㅋ-ㅋㅋㅋㅋ</span></i>
+       	<i class="bi bi-clock d-flex align-items-center ms-4"><span>open:07:00AM - close:22:00PM</span></i>
+        <i class="bi bi-clock d-flex align-items-center ms-4"><span id="clock">00:00:00</span></i>
+      </div>
+		
+		<script>
+			const clock = document.getElementById("clock");
+			
+			function getClock(){
+			  const now = new Date();	
+			  const hour = now.getHours();
+			  const minutes = now.getMinutes();
+			  const seconds = now.getSeconds();
+			  clock.innerText = `${hour}:${minutes}:${seconds}`;
+			}
+			getClock();
+			setInterval(getClock, 1000);
+
+		</script>
+
+
+      <div class="languages d-none d-md-flex align-items-center">
+        <ul>
+      
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top d-flex align-items-cente">
+    <div class="container-fluid container-xl d-flex align-items-center justify-content-lg-between">
+
+      <h1 class="logo me-auto me-lg-0"><a href="index.html">
+		  <img src="../image/IMG_9566.png">
+	  </a></h1>
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <!-- <a href="index.html" class="logo me-auto me-lg-0"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+
+      <nav id="navbar" class="navbar order-last order-lg-0">
+        <ul>
+         
+          <li><a class="nav-link scrollto active" href="../kil/Restaurantly/main.html">Home</a></li>
+         <li class="dropdown"><a href="#"><span>Super coffee</span> <i class="bi bi-chevron-down"></i></a>
+         
+            <ul>
+              <li><a href="../kil/Restaurantly/main.html#about">super story</a></li>   
+              <li><a href="../kim/CEO.html">CEO 인사말</a></li>
+              
+            </ul>
+          </li>
+          
+         
+         <li class="dropdown"><a href="#"><span>Menu</span> <i class="bi bi-chevron-down"></i></a>
+         
+            <ul>
+              <li><a href="../kil/Restaurantly/main.html#menu">Coffee</a></li>   
+              <li><a href="../kil/Restaurantly/main.html#menu">Non-Coffee</a></li>
+                <li><a href="../kil/Restaurantly/main.html#menu">Bread</a></li>
+            </ul>
+          </li>
+          
+       
+         <li class="dropdown"><a href="#"><span>News</span> <i class="bi bi-chevron-down"></i></a>
+         
+            <ul>
+              <li><a href="../choi/superNotice.html">공지사항</a></li>   
+              <li><a href="../kil/Restaurantly/faq.html">FAQ</a></li>
+              
+            </ul>
+          </li>
+          
+         
+         <li class="dropdown"><a href="#"><span>채용</span> <i class="bi bi-chevron-down"></i></a>
+         
+            <ul>
+              <li><a href="../ha/recuriet.html">채용공고</a></li>   
+    
+              
+            </ul>
+          </li>
+          <li><a class="nav-link scrollto" href="../kil/Restaurantly/main.html#contact">Contact</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+      
+
+    </div>
+  </header><!-- End Header -->
+
+  <main id="main">
+    <section class="breadcrumbs">
+      <div class="container">
+
+        <div class="d-flex justify-content-between align-items-center">
+          <h2 style="font-family: 'sfont'; font-size: 40px;">CEO 인사말</h2>
+          
+          <ol>
+            <li><a href="../kil/Restaurantly/main.html">Home</a></li>
+            <li>CEO 인사말 </li>
+          </ol>
+        </div>
+
+      </div>
+    </section>
+
+	<!-- 여기부터 센터 설명-->
+    <section class="inner-page">
+		
+		<div class="container" style="border-radius: 30px; padding: 40px; background-color: #1a1814" >
+			<h1 align="center" style="color: tan;" > Super Coffee </h1>
+		
+		<div style="margin-top: 30px;">  		
+			<hr style="border: solid 1px tan;">		
+	     </div>    
+	        
+		 <div class="container text-center">
+		  <div class="row" style="margin: 100px 70px auto;">
+		    <div class="col" style="text-align: left";>
+		
+			<figure class="figure">
+			  <img src="../kil/image/Hyewon gil.png" width="500px" height="400px" class="figure-img img-fluid rounded" alt="...">
+			  <figcaption class="figure-caption"> Super Coffee CEO </figcaption>
+			</figure>
+	
+				 	
+				<h5> 사업약력 및 저서 </h4> <br>
+				<ul> 
+					<li>2012 슈퍼재팬 대표이사</li> 
+					<li>2008 슈퍼아메리카 대표이사</li>
+					<li>2005 슈퍼차이나 대표이사</li>
+					<li>1993 슈퍼코리아 대표이사</li>
+				</ul>
+			</p>
+		    </div>
+		    <div class="col" style="text-align: left; margin-left: 40px;">
+		      
+				  	<h3 class="fw-bold" style="color: ivory;" > 합리적인 커피 문화를 <br> 만들어 갑니다.</h4> 
+				  	<hr style="border: solid 1px tan;" width="20%"> <br> 
+					
+					<p style="color: ivory;">
+						슈퍼커피의 역사는 재미있는 에피소드로 시작합니다. <br>
+						2006년, 논현동에 몰려있던 저희 식당들 때문에 <br>
+						식당 주변에 고객들의 불법 주정차가 많았습니다. <br>
+						이러한 차량 때문에 가장 피해를 많이 보신 분이  <br>
+						저희 원조쌈밥집 입구에 위치한 작은 카페였습니다.  <br>
+						카페 앞 정차 차량으로 인해 항상 죄송한 마음이 있었는데, <br>
+						아예 인수를 하는 것이 어떻겠냐는 카페  <br>
+						사장님의 부탁에 어쩌다 보니 운영하게 된 작은 카페가  <br>
+						바로 슈퍼커피의 시초가 되었습니다.  <br> <br>
+						
+						막상 가게를 인수하고 나니, 커피 공부를 하지 않을 수 없었습니다. <br>
+						커피에 대해 연구하면서 머릿속으로 수많은 물음표를 만들었습니다. <br>
+						원두의 유통 구조가 어떠하길래 커피가 이렇게 비쌀까?  <br>
+						아이스커피를 목덜미가 서늘할 정도로 시원하게 마실 수 있는 <br>
+						방법은 무엇일까? 내가 좋아하는 믹스커피를 질리지 않게  <br>
+						대용량으로 즐기는 방법은 없을까?  <br>
+						테이크아웃이라고 빵을 못 팔 수는 없지 않을까? <br> <br>
+						
+						이러한 호기심으로 시작했던 작은 카페의 메뉴가 국내를 넘어  <br>
+						세계인에게도 인정받는 시그니처 메뉴인 아이스 아메리카노와  <br>
+						원조커피로 성장하게 되었습니다. <br> <br>
+						
+						이는 모두 가성비 중심의 스마트하고,  <br>
+						합리적인 소비를 원하는  <br>
+						고객분들께서 만들어 주신 성장입니다.  <br>
+						그 기대를 저버리지 않기 위한 막중한 책임감을 느끼며  <br>
+						좋은 품질, 부담 없는 가격의 커피와 음료로 보답하겠습니다. <br> <br>
+						
+						항상 친구 같은 편안한 모습으로 여러분 곁에 있고 싶습니다. <br>
+						슈퍼커피와 함께 달콤한 하루 되시기를 바랍니다. <br> <br> <br> <br>
+					</p> 
+					
+					(주) 슈퍼커피 대표이사  
+					<h4> 길  혜  원 
+					<img src="../image/IMG_9566.png" width="100px" height="60px"> </h4> <br>
+					
+					</div>
+				</div>
+				<div>  		
+				<hr style="border: solid 1px tan;">		
+		    	</div>		
+			</div>	
+		</div>
+	</div>
+		
+    </section>
+
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6">
+            <div class="footer-info">
+              <img src="../../project/kim/image/IMG_9566.png" width="100" height="100">
+              <p>
+                서울특별시 구로구 구로동 디지털로34길 27 <br>
+                대륭포스트타워 3차 1106호<br><br>
+                <strong>Phone:</strong>010-ㅋㅋㅋㅋ-ㅋㅋㅋㅋ<br>
+                <strong>Email:</strong> info@example.com<br>
+              </p>
+              <div class="social-links mt-3">
+                <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+                <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+                <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+                <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+                <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-md-6 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#about">About us</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Services</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
+            </ul>
+          </div>
+
+        
+
+          <div class="col-lg-4 col-md-6 footer-newsletter">
+            <h4>Our Newsletter</h4>
+            <p>Super Coffee의 소식을 계속 듣고싶다면</p>
+            <form action="" method="post">
+              <input type="email" name="email"><input type="submit" value="Subscribe">
+            </form>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong><span>Super Coffee</span></strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/restaurantly-restaurant-template/ -->
+        Designed by <a href="https://bootstrapmade.com/">우리조 메이드</a>
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <div id="preloader"></div>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

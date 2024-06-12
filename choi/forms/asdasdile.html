@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>JQuery 의 DOM Tree 이해</title>
+<script src="../../jq/jquery3.js"></script>
+<script>
+//일반 DOM 에서는 현재 노드를 기준으로 위는 parent, 아래는 child 로만 표기 가능했었음.
+//그런데 JQueryDOM 에선, parent < grandparent < great-grandparent : Ancestor
+//반대의 경우엔 child 앞에 위 키워드만 넣으면 됩니다. 
+//이웃은 sibling으로 표현 합니다. 이런 구조로 트리를 순회해서 노드찾기를 수행 합니다.
+
+
+function test(){
+   location.href = '#f';
+   /*
+   let t = document.getElementById('f');
+   alert(t.innerHTML);
+   t.focus();
+   */
+}
+</script>
+</head>
+<body onload="test();">
+   
+<p1 >ss</p1>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+<p1>ss</p1>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<p1>ss</p1>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<p1>ss</p1>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<p1 id="f" name="f">GGGGGGGGGG</p1>
+</body>
+</html>

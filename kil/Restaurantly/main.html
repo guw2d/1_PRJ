@@ -1,0 +1,842 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Welcome to Super coffee</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Restaurantly
+  * Updated: Jan 09 2024 with Bootstrap v5.3.2
+  * Template URL: https://bootstrapmade.com/restaurantly-restaurant-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+ <style>
+@font-face {
+    font-family: "sfont";
+    font-size: 30px;
+    src: url("../../fonts/Dongle/Dongle-Regular.ttf");
+}	 
+
+@font-face {
+    font-family: "efont";
+    font-size: 30px;
+    src: url("../../fonts/CuteFont-Regular.ttf");
+}
+
+@font-face {
+    font-family: "ffont";
+    font-size: 30px;
+    src: url("../../fonts/Sunflower/Sunflower-Medium.ttf");
+}	 
+
+.events {
+  background: url(../image/cafe-7454951_1280.jpg) center center no-repeat;
+  background-size: cover;
+  position: relative;
+}
+ </style> 
+
+<script>
+		window.open("noticePopup.html","pop","width=500, height=600, left=500");
+	</script>
+
+</head>
+
+<body>
+	
+
+  <!-- ======= Top Bar ======= -->
+  <div id="topbar" class="d-flex align-items-center fixed-top">
+    <div class="container d-flex justify-content-center justify-content-md-between">
+
+      <div class="contact-info d-flex align-items-center">
+        <i class="bi bi-phone d-flex align-items-center"><span>010-ㅋㅋㅋㅋ-ㅋㅋㅋㅋ</span></i>
+        <i class="bi bi-clock d-flex align-items-center ms-4"><span>open:07:00AM - close:22:00PM</span></i>
+        <i class="bi bi-clock d-flex align-items-center ms-4"><span id="clock"></span></i>
+      </div> 
+    </div>
+  </div>
+
+  <script>
+		const clock = document.getElementById("clock");
+			
+			function getClock(){
+			  const now = new Date();	
+			  const hour = now.getHours();
+			  const minutes = now.getMinutes();
+			  const seconds = now.getSeconds();
+			  clock.innerText = `${hour}:${minutes}:${seconds}`;
+			}
+			getClock();
+			setInterval(getClock, 1000);
+
+	</script>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top d-flex align-items-cente">
+    <div class="container-fluid container-xl d-flex align-items-center justify-content-lg-between">
+
+      <h1 class="logo me-auto me-lg-0"><a href="index.html"><img src="../image/IMG_9566.png"></a></h1>
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <!-- <a href="index.html" class="logo me-auto me-lg-0"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+
+      <nav id="navbar" class="navbar order-last order-lg-0">
+        <ul>
+         
+          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+          <li class="dropdown"><a href="#"><span>Super coffee</span> <i class="bi bi-chevron-down"></i></a>
+         
+            <ul>
+              <li><a class="nav-link scrollto " href="#about">super story</a></li>   
+              <li><a href="../../kim/CEO.html">CEO 인사말</a></li>
+              
+            </ul>
+		</li>
+          
+         
+         <li class="dropdown"><a class="nav-link scrollto" href="#menu"><span>Menu</span> <i class="bi bi-chevron-down"></i></a>
+         
+            <ul>
+              <li><a  href="#cof">Coffee</a></li>   
+              <li><a  href="#non">Non-Coffee</a></li>
+              <li><a  href="#br">Bread</a></li>
+            </ul>
+          </li>
+          
+       
+         <li class="dropdown"><a href="#"><span>News</span> <i class="bi bi-chevron-down"></i></a>
+         
+            <ul>
+              <li><a href="../../choi/superNotice.html">공지사항</a></li>   
+              <li><a href="../Restaurantly/faq.html">FAQ</a></li>
+              
+            </ul>
+          </li>
+          
+         
+         <li class="dropdown"><a href="#"><span>채용</span> <i class="bi bi-chevron-down"></i></a>
+         
+            <ul>
+              <li><a href="../../ha/recuriet.html">채용공고</a></li>   
+              
+            </ul>
+          </li>
+          
+ 
+          
+          <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+    
+
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex align-items-center">
+    <div class="container position-relative text-center text-lg-start" data-aos="zoom-in" data-aos-delay="100">
+      <div class="row">
+        <div class="col-lg-12">
+			<img src="../image/IMG_9566.png" width="400" height="200">
+          <div class="col-lg-6">
+          <h1>Welcome to <span>Super Coffee</span></h1>
+          
+          <h1 style="font-family: 'efont';">Super Size의 Coffee를!!!!!!!! </h1>
+          </div>
+
+        </div>
+      <!--  <div class="col-lg-4 d-flex align-items-center justify-content-center position-relative" data-aos="zoom-in" data-aos-delay="200">
+          <a href="https://www.youtube.com/watch?v=u6BOC7CDUTQ" class="glightbox play-btn"></a>
+        </div>-->
+
+      </div>
+    </div>
+  </section><!-- End Hero -->
+
+  <main id="main">
+
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about">
+      <div class="container" data-aos="fade-up">
+
+        <div class="row">
+          <div class="col-lg-6 order-1 order-lg-2" data-aos="zoom-in" data-aos-delay="100">
+            <div class="about-img">
+              <img src="../image/DSC02651.jpg" alt="">
+            </div>
+          </div>
+          <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content">
+            <h3 style="font-family: 'sfont'; font-size: 50px; color: #cda45e;">Super 사이즈와 고품격의 데일리 커피</h3>
+            <p class="fst-italic" style="font-family: 'sfont'; font-size: 30px;">
+              언제 어디서나, 부담스럽지 않은 가격과 다양한 종류의 케냐, 에콰도르, 말리 등 <br>
+              다양한 원두의 고품질 커피를 즐길 수 있는 Super Coffee
+            </p>
+            <ul style="font-family: 'sfont'; font-size: 30px;">
+              <li><i class="bi bi-check-circle"></i> 커피전문점으로 다양한 음료와 원두의 진한 커피를 맛 보실수 있습니다</li>
+              <li><i class="bi bi-check-circle"></i> 더 크고 더 맛있다!</li>
+              <li><i class="bi bi-check-circle"></i> 슈퍼사이즈에 우수한 품질의 커피&음료를 합리적인 가격으로 제공하여 부담없이 여유롭게 다양하고 착한 음료를 제공합니다.</li>
+            </ul>
+            <p style="font-family: 'ffont'; font-size: 18px;">
+             숙련된 바리스타로부터 매일매일 아침마다 로스팅되어 나온 신선하고 다양한 맛의 원두를 통하여 내려진 고품질의 커피를 즐길 수 있는 슈퍼커피
+             케냐, 에콰도르 부터 한국에 흔하지 않은 말리 원두를 사용하여 다양한 커피를 즐기실 수 있습니다.
+             또한 커피를 드시지느 못하는 분들 역시 커피 외에 다른 음료 역시 즐기실 수 있습니다!
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End About Section -->
+
+    
+
+    <!-- ======= Menu Section ======= -->
+    <section id="menu" class="menu section-bg">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Menu</h2>
+          <p>Check Our Tasty Menu</p>
+        </div>
+
+        <div class="row" data-aos="fade-up" data-aos-delay="100" id="Non-Coffee">
+          <div class="col-lg-12 d-flex justify-content-center">
+            <ul id="menu-flters">
+              <li  data-filter="*"><class="filter-active" style="font-family: sfont; font-size: 30px;">All</class></li>
+              <li id="cof" data-filter=".filter-starters" style="font-family: sfont; font-size: 30px;"><class="filter-active">Coffee</class></li>
+              <li id="non" data-filter=".filter-salads" style="font-family: sfont; font-size: 30px;"><class="filter-active">Non-Coffee</class></li>
+              <li id="br" data-filter=".filter-specialty" style="font-family: sfont; font-size: 30px;"><class="filter-active"> Breads</class></li>
+            
+            </ul>
+          </div>
+        </div>
+
+        <div class="row menu-container" data-aos="fade-up" data-aos-delay="200">
+
+          <div class="col-lg-6 menu-item filter-starters">
+            <img src="../image/super.png" class="menu-img" alt="">
+            <div class="menu-content">
+              <a href="#">Americano</a><span>$4.00</span>
+            </div>
+            <div class="menu-ingredients">
+             You can choice ICE/HOT
+            </div>
+          </div>
+
+          <div class="col-lg-6 menu-item filter-starters">
+            <img src="../image/super.png" class="menu-img" alt="">
+            <div class="menu-content">
+              <a href="#">Cafe Latte</a><span>$5.00</span>
+            </div>
+            <div class="menu-ingredients">
+             You can choice ICE/HOT
+            </div>
+          </div>
+
+          <div class="col-lg-6 menu-item filter-starters">
+            <img src="../image/super.png" class="menu-img" alt="">
+            <div class="menu-content">
+              <a href="#">Cappucino</a><span>$5.00</span>
+            </div>
+            <div class="menu-ingredients">
+             You can choice ICE/HOT
+            </div>
+          </div>
+
+          <div class="col-lg-6 menu-item filter-starters">
+            <img src="../image/super.png" class="menu-img" alt="">
+            <div class="menu-content">
+              <a href="#">Caramel Macciatto</a><span>$6.00</span>
+            </div>
+            <div class="menu-ingredients">
+              You can choice ICE/HOT
+            </div>
+          </div>
+
+          <div class="col-lg-6 menu-item filter-starters">
+            <img src="../image/super.png" class="menu-img" alt="">
+            <div class="menu-content">
+              <a href="#">Vanilla Latte</a><span>$6.00</span>
+            </div>
+            <div class="menu-ingredients">
+              You can choice ICE/HOT
+            </div>
+          </div>
+
+          <div class="col-lg-6 menu-item filter-salads">
+            <img src="../image/straw.jpg" class="menu-img" alt="">
+            <div class="menu-content">
+              <a href="#">Strawnberry Latte</a><span>$7.00</span>
+            </div>
+            <div class="menu-ingredients">
+             Only ICE
+            </div>
+          </div>
+
+          <div class="col-lg-6 menu-item filter-salads">
+            <img src="../image/chocolatter.png" class="menu-img" alt="">
+            <div class="menu-content">
+              <a href="#">Choco Latte</a><span>$7.50</span>
+            </div>
+            <div class="menu-ingredients">
+              Only ICE
+            </div>
+          </div>
+
+          <div class="col-lg-6 menu-item filter-salads">
+            <img src="../image/bananas.png" class="menu-img" alt="">
+            <div class="menu-content">
+              <a href="#">Banana Latte</a><span>$7.00</span>
+            </div>
+            <div class="menu-ingredients">
+              Only ICE
+            </div>
+          </div>
+
+          <div class="col-lg-6 menu-item filter-specialty">
+            <img src="../image/cookie.png" class="menu-img" alt="">
+            <div class="menu-content">
+              <a href="#">Cookie</a><span>$5.00</span>
+            </div>
+            <div class="menu-ingredients">
+              You can bake yourself with next to small oven
+            </div>
+         		 </div>
+           
+           
+            <div class="col-lg-6 menu-item filter-specialty">
+            <img src="../image/croffle.png" class="menu-img" alt="">
+            <div class="menu-content">
+              <a href="#">Croffle</a><span>$5.00</span>
+            </div>
+            <div class="menu-ingredients">
+              you can choice Choco, Strawberry, Earlgry cake
+            </div>
+          		</div>
+          
+          
+            <div class="col-lg-6 menu-item filter-specialty">
+            <img src="../image/cake.png" class="menu-img" alt="">
+            <div class="menu-content">
+              <a href="#">Cake</a><span>$5.00</span>
+            </div>
+            <div class="menu-ingredients">
+              Plump lobster meat, mayo and crisp lettuce on a toasted bulky roll
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Menu Section -->
+
+    <!-- ======= Events Section ======= -->
+    <section id="events" class="events">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Events</h2>
+          <p>New menu</p>
+        </div>
+
+        <div class="events-slider swiper" data-aos="fade-up" data-aos-delay="100">
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+              <div class="row event-item">
+                <div class="col-lg-6">
+                  <img src="../image/strawberry-matcha-latte-2-1024x683.jpg" class="img-fluid" alt="">
+                </div>
+                <div class="col-lg-6 pt-4 pt-lg-0 content">
+                  <h3>Strawberry Matcha Latte</h3>
+                  <div class="price">
+                    <p><span>$8</span></p>
+                  </div>
+                  <p class="fst-italic" style="font-family: 'ffont'; font-size: 20px;">
+                   신선하고 달달한 생딸기(Strawberry)와 씁쓸하면서도 매력있는 <br>
+                   마차(Matcha)라떼의 새로운 조합! 
+                  </p>
+                  <ul style="font-family: 'sfont'; font-size: 25px;">
+                    <li><i class="bi bi-check-circle"></i>매일 아침 공급되는 신선한 생딸기를!  </li>
+                    <li><i class="bi bi-check-circle"></i> 말차의 본고장인 일본에서 직수입한 말차를!</li>
+                    <li><i class="bi bi-check-circle"></i> 한번에 조합된 새로운 맛 딸기마차라떼!</li>
+                  </ul>
+                  <p style="font-family: 'sfont'; font-size: 18px;">
+					마차 또는 딸기에 알러지가 있으신 분은 직원에게 주문전에 미리 말씀해 주시면 딸기라떼 또는 마차라떼로 제조해 드립니다!!!
+                  </p>
+                </div>
+              </div>
+            </div><!-- End testimonial item --> 
+
+            <div class="swiper-slide">
+              <div class="row event-item">
+                <div class="col-lg-6">
+                  <img src="../image/vino.jpg" class="img-fluid" alt="">
+                </div>
+                <div class="col-lg-6 pt-4 pt-lg-0 content">
+                  <h3>Super 뱅쇼</h3>
+                  <div class="price">
+                    <p><span>$8</span></p>
+                  </div>
+                  <p class="fst-italic" style="font-family: 'ffont'; font-size: 20px;">
+                    뱅쇼(Vin Chaud)는 'Vin(포도주)'와 chaud(따뜻한, 뜨거운)”라는 말이 합쳐진 <br>
+                    단어로, 말 그대로 따뜻한 와인이라는 뜻입니다. 
+                    유럽 중에서도 겨울에 매우 추운 독일과 스칸디나비아 지역에서 원기회복과 감기 예방을 위해 약으로 마시기<br>
+                    시작한 것이 기원입니다.
+                  </p>
+                  <ul style="font-family: 'sfont'; font-size: 25px;">
+                    <li><i class="bi bi-check-circle"></i> 따뜻한 뱅쇼를 Super coffee에서</li>
+                    <li><i class="bi bi-check-circle"></i> 맛으로도 좋고 감기 예방을 위해서 건강에도 좋은 뱅쇼</li>
+                    <li><i class="bi bi-check-circle"></i> 직접 끓이고 만드는 뱅쇼를 즐기세요</li>
+                  </ul>
+                  <p style="font-family: 'sfont'; font-size: 18px;">
+                  	너무 뜨거운 음료가 싫다면 점원에게 미리 말씀해주세요!!!
+                  </p>
+                </div>
+              </div>
+            </div><!-- End testimonial item -->
+
+            
+
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </div>
+    </section><!-- End Events Section -->
+
+   
+
+    <!-- ======= Testimonials Section ======= -->
+    <section id="testimonials" class="testimonials section-bg">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Testimonials</h2>
+          <p>What they're saying about us</p>
+        </div>
+
+        <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  I've been Super coffee. when I was in Korea. That was awesome Experience in My life. Good Barista makes surprised coffee for me. If I hava chance, I'd like to visit there one more time
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+                <img src="../image/IMG_6410.jpg" class="testimonial-img" alt="">
+                <h3 style="font-size: 30px;">Lionel Messi</h3>
+                <h4 style="font-size: 25px;">G.O.A.T</h4>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  정말 맛있는 커피! 슈퍼커피를 인수하고싶다!!
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+                <img src="../image/musk.jpg" class="testimonial-img" alt="">
+                <h3 style="font-size: 30px;">일론머스크</h3>
+                <h4 style="font-size: 25px;">세계최고부자</h4>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  역시 커피는 스타벅스보단 슈퍼커피지. 다음 CEO는 나다!!
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+                <img src="../image/하워드 슐츠.jpg" class="testimonial-img" alt="">
+                <h3 style="font-size: 30px;">하워드 슐츠</h3>
+                <h4 style="font-size: 25px;">스타벅스 CEO</h4>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  쉿!! 나도 여기 사장하고싶다
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+                <img src="../image/jaedragon.jpg" class="testimonial-img" alt="">
+                <h3 style="font-size: 30px;">Dragon Jae</h3>
+                <h4 style="font-size: 25px;">샘숭 그자체</h4>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum quid.
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+                <img src="assets/img/testimonials/testimonials-5.jpg" class="testimonial-img" alt="">
+                <h3 style="font-size: 30px;">John Larson</h3>
+                <h4 style="font-size: 25px;">Entrepreneur</h4>
+              </div>
+            </div><!-- End testimonial item -->
+
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </div>
+    </section><!-- End Testimonials Section -->
+
+    <!-- ======= Gallery Section ======= -->
+    <section id="gallery" class="gallery">
+
+      <div class="container" data-aos="fade-up">
+        <div class="section-title">
+          <h2>Gallery</h2>
+          <p>Some photos from Our Restaurant</p>
+        </div>
+      </div>
+
+      <div class="container-fluid" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row g-0">
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="../image/barista-5055060_1280.jpg" class="gallery-lightbox" data-gall="gallery-item">
+                <img src="../image/barista-5055060_1280.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="../image/coffee-20.jpg" class="gallery-lightbox" data-gall="gallery-item">
+                <img src="../image/coffee-20.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="../image/crois.jpg" class="gallery-lightbox" data-gall="gallery-item">
+                <img src="../image/crois.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="../image/coffee-wond_1280.jpg" class="gallery-lightbox" data-gall="gallery-item">
+                <img src="../image/coffee-wond_1280.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="../image/gall.jpg" class="gallery-lightbox" data-gall="gallery-item">
+                <img src="../image/gall.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="../image/gall2.jpg" class="gallery-lightbox" data-gall="gallery-item">
+                <img src="../image/gall2.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="../image/gall3.jpg" class="gallery-lightbox" data-gall="gallery-item">
+                <img src="../image/gall3.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="../image/gall5.jpg" class="gallery-lightbox" data-gall="gallery-item">
+                <img src="../image/gall5.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Gallery Section -->
+
+    <!-- ======= Barista Section ======= -->
+    <section id="chefs" class="chefs">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Barista</h2>
+          <p>Our Proffesional Barista</p>
+        </div>
+
+        <div class="row">
+
+          <div class="col-lg-4 col-md-6">
+            <div class="member" data-aos="zoom-in" data-aos-delay="100">
+              <img src="../image/pic.png" class="img-fluid" alt="">
+              <div class="member-info">
+                <div class="member-info-content">
+                  <h3 style="font-size: 25px;">HeeJung Choi</h3>
+                  <span style="font-size: 20px;">수석바리스타</span>
+                </div>
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <div class="member" data-aos="zoom-in" data-aos-delay="200">
+              <img src="../image/dooli.png" class="img-fluid" alt="">
+              <div class="member-info">
+                <div class="member-info-content">
+                  <h3 style="font-size: 25px;">Dooli Ha</h3>
+           		 <span style="font-size: 20px;">돌아가 쥬라기로</span>
+                </div>
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <div class="member" data-aos="zoom-in" data-aos-delay="300">
+              <img src="../image/kim.png" class="img-fluid" alt="">
+              <div class="member-info">
+                <div class="member-info-content">
+                  <h3 style="font-size: 25px;">HyoJung Kim</h3>
+                  <span style="font-size: 20px;">사진 어떻게 할래? 이게 너야?</span>
+                </div>
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Chefs Section -->
+
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Contact</h2>
+          <p>Contact Us</p>
+        </div>
+      </div>
+
+      <div data-aos="fade-up">
+        <iframe style="border:0; width: 100%; height: 350px;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3165.9525270583945!2d126.89562037642763!3d37.48544662877303!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca1b411f7a5ab%3A0x694650ef6f85d2fb!2z7ZWc6rWt7KeB7JeF7KCE66y47ZWZ6rWQ!5e0!3m2!1sko!2skr!4v1705482924589!5m2!1sko!2skr" width="400" height="500" style="border:0;" allowfullscreen="true"" "referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+
+      <div class="container" data-aos="fade-up">
+
+        <div class="row mt-5">
+
+          <div class="col-lg-4">
+            <div class="info">
+              <div class="address">
+                <i class="bi bi-geo-alt"></i>
+                <h4>위치:</h4>
+                <p>서울특별시 구로구 구로동 디지털로34길 27 대륭포스트타워 3차 1106호</p>
+              </div>
+
+              <div class="open-hours">
+                <i class="bi bi-clock"></i>
+                <h4>Open Hours:</h4>
+                <p>
+                  Monday-Sunday:<br>
+                  07:00 AM - 22:00 PM
+                </p>
+              </div>
+
+              <div class="email">
+                <i class="bi bi-envelope"></i>
+                <h4>Email:</h4>
+                <p>info@example.com</p>
+              </div>
+
+              <div class="phone">
+                <i class="bi bi-phone"></i>
+                <h4>Call:</h4>
+                <p>010-ㅋㅋㅋㅋ-ㅋㅋㅋㅋ</p>
+              </div>
+
+            </div>
+
+          </div>
+
+          <div class="col-lg-8 mt-5 mt-lg-0">
+
+            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+              <div class="row">
+                <div class="col-md-6 form-group">
+                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+                </div>
+                <div class="col-md-6 form-group mt-3 mt-md-0">
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+                </div>
+              </div>
+              <div class="form-group mt-3">
+                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+              </div>
+              <div class="form-group mt-3">
+                <textarea class="form-control" name="message" rows="8" placeholder="Message" required></textarea>
+              </div>
+              <div class="my-3">
+     
+              </div>
+             
+              <div class="text-center" onclick="location.href='main.html';">
+				  <button type="submit" onclick="alert('Your message has been sent. Thank you!');">
+				 Send Message </button></div>
+			 
+			 
+			
+            </form>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Contact Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6">
+            <div class="footer-info">
+              <img src="../image/IMG_9566.png" width="100" height="100">
+              <p style="font-family: 'ffont';">
+                서울특별시 구로구 구로동 디지털로34길 27 <br>
+                대륭포스트타워 3차 1106호<br><br>
+                <strong>Phone:</strong>010-ㅋㅋㅋㅋ-ㅋㅋㅋㅋ<br>
+                <strong>Email:</strong> info@example.com<br>
+              </p>
+              <div class="social-links mt-3">
+                <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+                <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+                <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+                <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+                <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-md-6 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#about">About us</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Services</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
+            </ul>
+          </div>
+
+        
+
+          <div class="col-lg-4 col-md-6 footer-newsletter">
+            <h4>Our Newsletter</h4>
+            <p>Super Coffee의 소식을 계속 듣고싶다면</p>
+            <form action="" method="post">
+              <input type="email" name="email"><input type="submit" value="Subscribe">
+            </form>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong><span>Super Coffee</span></strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/restaurantly-restaurant-template/ -->
+        Designed by <a href="https://bootstrapmade.com/">우리조 메이드</a>
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <div id="preloader"></div>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
